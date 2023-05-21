@@ -8,11 +8,12 @@ function App() {
 
   async function getLocation() {
     const ip = await invoke("get_location", {});
-    if (!ip) {
-      alert("Cannot get ip addr (internet not found?)");
-      return;
-    }
-    alert(`Your ip addr is ${ip}`);
+    console.info("ip", ip);
+    // if (!ip) {
+    //   alert("Cannot get ip addr (internet not found?)");
+    //   return;
+    // }
+    // alert(`Your ip addr is ${ip}`);
   }
 
   return (
